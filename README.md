@@ -14,7 +14,9 @@ Taroko Contacts Server https://github.com/resumecompanion/taroko_server
 
 2.npm i
 
-3.npm start
+3.npm start 
+
+To start the server in development mode at http://localhost:3001
 
 testing: npm run test
 
