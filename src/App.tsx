@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import WaitingComponent from './common/utils';
 
 const Home = lazy(
@@ -10,10 +10,7 @@ const Home = lazy(
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/">
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="home/*" element={WaitingComponent(Home)} />
-      </Route>
+      <Route path="/" element={WaitingComponent(Home)} />
     </Routes>
   </BrowserRouter>
 );
